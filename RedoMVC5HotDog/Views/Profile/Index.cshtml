@@ -1,0 +1,26 @@
+﻿@model IEnumerable<RedoMVC5HotDog.Models.Profile>
+
+@{
+    ViewBag.Title = "Profile List";
+}
+
+<h2>Hot Dog Profiles!</h2>
+<ul>
+    @foreach (var profile in Model)
+    {
+        <li>@Html.ActionLink(profile.Name, "Details", "Profile", new { id = profile.ProfileID }, null)</li>
+    }
+</ul>
+
+Picture references for following pages:
+<br />
+<br />
+<a href="http://www.google.com/imgres?imgurl=http://www.ngngsports.com/wp-content/uploads/2014/10/2684050-9504989296-charl.jpg&imgrefurl=http://www.ngngsports.com/2014/10/charles-barkley-goes-off-about-comments-made-towards-russell-wilson.html&h=3000&w=2193&tbnid=UTELzuEYnUYnoM:&zoom=1&docid=ErukM-mkKBx2MM&ei=zLIaVdC7MIavggT-i4TwBw&tbm=isch&ved=0CDUQMygDMAM">Charles Barkley</a>
+<br />
+<br />
+<a href="http://www.google.com/imgres?imgurl=http://savingstar.com/blog/wp-content/uploads/2011/08/201108_JoeyChestnut.jpg&imgrefurl=https://savingstar.com/blog/2011/08/how-much-mac-cheese-could-you-eat-in-7-minutes/&h=840&w=622&tbnid=Q2-u9O2MxnbHYM:&zoom=1&docid=7xeNVF7JxFz51M&ei=3bIaVe73M4qZNuO4gvgN&tbm=isch&ved=0CC4QMygDMAM">Joey Chesnut</a>
+<br />
+<br />
+<a href="http://images.buddytv.com/articles/rob-and-big/images/rob-dyrdek.jpg">Rob Dyrdek</a>
+
+
